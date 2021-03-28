@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div id ='mainSymbol' class='sybmol'>
+        <div class='sun'></div>
+        <div id='mainRays' class='rays'>
+            
+            <div class="ray_6"></div>
+            <div class="ray_7"></div>
+            <div class="ray_8"></div>
+            <div class="ray_9"></div>
+            <div class="ray_10"></div>
+            <div class="ray_11"></div>
+            <div class="ray_12"></div>
+            <div class="ray_13"></div>
+            <div class="ray_14"></div>
+            <div class="ray_15"></div>
+            <div class="ray_16"></div>
+        </div>
+        
+        
+        <div class='mountain'>
+            <div class = 'bases'>
+                <div class="base_1"></div>
+                <div class="base_2"></div>
+                <div class="base_3"></div>
+                <div class="base_4"></div>
+                <div class="base_5"></div>
+                <div class="base_6"></div>
+                
+                
+                <div class="base_9"></div>
+                <div class="base_10"></div>
+                <div class="base_11"></div>
+                <div class="base_12"></div>
+                <div class="base_13"></div>
+                <div class="base_14"></div>
+                <div class="base_15"></div>
+                <div class="base_16"></div>
+                <div class="base_17"></div>
+                <div class="base_19"></div>
+                <div class="base_20"></div>
+                <div class="base_21"></div>
+                <div class="base_22"></div>
+                <div class="base_23"></div>
+                <div class="base_24"></div>
+                
+                <div class="base_27"></div>
+                <div class="base_28"></div>
+                <div class="base_29"></div>
+                <div class="base_30"></div>
+                <div class="base_31"></div>
+                <div class="base_32"></div>
+                <div class="base_33"></div>
+                <div class="base_35"></div>
+                <div class="base_36"></div>
+                <div class="base_37"></div>
+                <div class="base_38"></div>
+                <div class="base_39"></div>
+                <div class="base_40"></div>
+                <div class="base_41"></div>
+                <div class="base_42"></div>
+                
+                
+                <div class="base_48"></div>
+                
+            </div>
+            <div class="flat_1"></div>
+            <div class="flat_0"></div>
+            <div class="flat_0_1"></div>
+            <div class="flat_0_2"></div>
+            <div class="flat_2"></div>
+            <div class="flat_3"></div>
+            <div class="flat_4"></div>
+            
+            <div class="flat_6"></div>
+            <div class="flat_5"></div>
+            <div class="flat_8"></div>
+            <div class="flat_7"></div>
+            <div class="flat_9"></div>
+            <div class="flat_10"></div>
+            <div class="flat_11"></div>
+            <div class="flat_12"></div>
+            <div class="base_7"></div>
+            <div class="base_8"></div>
+            <div class="base_18"></div>
+            <div class="base_25"></div>
+            <div class="base_26"></div>
+            <div class="base_34"></div>
+            <div class="base_44"></div>
+            <div class="base_43"></div>
+            <div class="base_45"></div>
+                <div class="base_46"></div>
+                <div class="base_47"></div>
+        </div>
+    </div>
+    <script>
+        $(function(){
+            $('.rays').clone().attr('style','').removeAttr('id').appendTo('#mainSymbol').css({ left:455, transform:"rotateY(180deg)",'z-index':2});
+            $('.rays .ray_6')[1].remove();
+
+            $('.mountain').clone().appendTo('#mainSymbol').css({ left:492, transform:"rotateY(180deg)",'z-index':4}
+            );
+            
+        })
+    </script>
+</body>
+</html>
